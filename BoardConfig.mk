@@ -104,7 +104,8 @@ BOARD_KERNEL_CMDLINE := \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
     service_locator.enable=1
-
+    
+BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_MKBOOTIMG_ARGS := --header_version 2
 
 TARGET_KERNEL_CLANG_COMPILE := true
