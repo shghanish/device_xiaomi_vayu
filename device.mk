@@ -316,6 +316,10 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
