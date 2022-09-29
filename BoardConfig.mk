@@ -195,6 +195,9 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_M4DEFS += \
+    fingerprint_data_file=fingerprint_vendor_data_file \
+    sysfs_battery_supply=vendor_sysfs_battery_supply
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
